@@ -22,11 +22,37 @@
       duration-300">Contact</a>
     </nav>
 
-    <button class="hidden">
-      Hamberger
+    <button class="md:hidden text-white" id="hamberger">
+     &#9776;
     </button>
+
+ <script>
+  const hambergerButton = document.getElementById('hamberger')
+ </script>
+
+
   </div>
    </header>
+
+ <div id="hamberger-menu" class="md:hidden bg-blue-600 text-white py-4 hidden">
+<nav class="hidden mb:flex flex-col space-y-4 px-6">
+
+ <a href="" class="hover:bg-blue-300 hover:text-blue-900 px-4  roundad-xl transition duration-300">Home</a>
+ <a href="" class="hover:bg-blue-300 hover:text-blue-900 px-4  roundad-xl transition duration-300">About</a>
+ <a href="" class="hover:bg-blue-300 hover:text-blue-900 px-4  roundad-xl transition duration-300">Product</a>
+ <a href="" class="hover:bg-blue-300 hover:text-blue-900 px-4  roundad-xl transition duration-300">Contact</a>
+</nav>
+ </div>
+
+ <script>
+  const hambergerButton = document.getElementById('hamberger');
+  const hambergerMenu = document.getElementById('hamberger-menu');
+
+hambergerButton.addEventListener('click',() => {
+   hambergerMenu = classList.toggle('hidden');
+});
+
+ </script>
 
 <section class="container mx-auto px-6 my-8">
   <h2 class="text-2xl font-bold mb-4">Latest Gadgets</h2>
@@ -40,6 +66,52 @@
     </div>
   </div>
 </section>
+
+<section class="container mx-auto px-6 my-8">
+<h2 class="text-2xl font-bold mb-4"> Featured Products</h2>
+<div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-3 gap-8">
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+        <img src="img/_mophie_essential_wall_charger_pd_30w_1a1c_-_white._001_1.jpeg" alt="Earphones" class="w-full h-48 odject-cover rounded-lg mb-4">
+        <h3 class="text-xl font-semibold">Wireless Earphones</h3>
+        <p class="text-gray-600 mt-2">High-quality wireless earphone with noise cancellation</p>
+        <button class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300">
+          Learn More
+        </button>
+    </div>
+
+    
+
+  <div class="bg-white p-6 rounded-lg shadow-lg">
+    <img src="img/images.jfif" alt="Earphones" class="w-full h-48 odject-cover rounded-lg mb-4">
+    <h3 class="text-xl font-semibold">Wireless Earphones</h3>
+    <p class="text-gray-600 mt-2">High-quality wireless earphone with noise cancellation</p>
+    <button class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300">
+      Learn More
+    </button>
+</div>
+
+<div class="bg-white p-6 rounded-lg shadow-lg">
+  <img src="img/sony_wf-c500_truly_wireless_cpw_.001.jpeg" alt="Earphones" class="w-full h-48 odject-cover rounded-lg mb-4">
+  <h3 class="text-xl font-semibold">Wireless Earphones</h3>
+  <p class="text-gray-600 mt-2">High-quality wireless earphone with noise cancellation</p>
+  <button class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300">
+    Learn More
+  </button>
+</div>
+
+</div>
+</section>
+
+<footer class="bg-blue-600 text-gray-600 text-white py-6">
+<div class="container mx-auto text-center">
+ <p>&copy; 2024 it word All right resrved .</p>
+ <p class="mt-2">Follow us on social mdia for lastest update!</p>
+
+</div>
+  
+</div>
+
+</footer>
 
 
   
